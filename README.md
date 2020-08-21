@@ -3,7 +3,7 @@ A simple cookiecutter template for a discord.py bot. Comes with some basic utili
 
 # Requirements
 ```
-pip install cookiecutter
+pip install cookiecutter pipenv
 ```
 
 # Using the template
