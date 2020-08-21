@@ -16,6 +16,8 @@ cookiecutter https://github.com/makupi/cookiecutter-discord.py
 - `config.json` file with token and prefix
 - `.gitignore` with python template and `config.json` already ignored
 - basic utility cog with `ping`, `info` etc.
+- `gino` as a postgresql ORM
+- `alembic` for database migrations
 
 # Running the bot
 ```
