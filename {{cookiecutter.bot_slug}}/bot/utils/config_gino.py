@@ -1,7 +1,7 @@
 import json
 import os
 
-default_config = {"token": "", "prefix": "{{cookiecutter.prefix}}", "database": "{{cookiecutter.postgres_uri}}"}
+default_config = {"token": "", "prefix": "{{cookiecutter.prefix}}", "database": "postgresql://localhost/bot"}
 
 
 class Config:
