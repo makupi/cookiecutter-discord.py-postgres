@@ -1,0 +1,4 @@
+{
+  "token": "{{cookiecutter.token}}",
+  "prefix": "{{cookiecutter.prefix}}"
+}
