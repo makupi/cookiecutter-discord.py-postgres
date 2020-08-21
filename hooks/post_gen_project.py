@@ -20,6 +20,8 @@ if not add_gino_database:
     remove(os.path.join(base_path, 'utils', 'config_gino.py'))
     remove(os.path.join(base_path, '__init__gino.py'))
     remove('config_gino.json')
+    remove('alembic')
+    remove("alembic.ini")
 else:
     init_gino = os.path.join(base_path, '__init__gino.py')
     init = os.path.join(base_path, '__init__.py')
