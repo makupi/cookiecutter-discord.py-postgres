@@ -19,6 +19,20 @@ cookiecutter https://github.com/makupi/cookiecutter-discord.py
 - `gino` as a postgresql ORM
 - `alembic` for database migrations
 
+# Setup 
+If you are utilizing the postgresql database you have to configure your URI in the `config.json` file.    
+Then you have to generate an initial revision with alembic:
+```
+pipenv install
+pipenv shell
+alembic revision --autogenerate -m "Initial Revision"
+```
+And apply the revision with
+```
+alembic upgrade head
+```
+Whenever you make changes to your models you will have to generate a new revision and apply it. 
+
 # Running the bot
 ```
 pipenv install
