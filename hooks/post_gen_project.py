@@ -22,6 +22,7 @@ if not add_gino_database:
     remove('config_gino.json')
     remove('alembic')
     remove("alembic.ini")
+    remove("Pipfile_gino")
 else:
     init_gino = os.path.join(base_path, '__init__gino.py')
     init = os.path.join(base_path, '__init__.py')
@@ -36,3 +37,5 @@ else:
     shutil.move(config_init_gino, config_init)
 
     shutil.move('config_gino.json', 'config.json')
+    shutil.move("Pipfile_gino", "Pipfile")
+
