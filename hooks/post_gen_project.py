@@ -23,6 +23,7 @@ if not add_gino_database:
     remove('alembic')
     remove("alembic.ini")
     remove("Pipfile_gino")
+    remove(os.path.join(base_path, 'cogs', 'settings.py'))
 else:
     init_gino = os.path.join(base_path, '__init__gino.py')
     init = os.path.join(base_path, '__init__.py')
