@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 .idea/
+
+\{\{cookiecutter.bot_slug\}\}/Pipfile.lock

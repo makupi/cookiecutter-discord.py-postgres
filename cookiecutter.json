@@ -3,5 +3,6 @@
   "bot_slug": "{{ cookiecutter.bot_name.lower().replace(' ', '_').replace('-', '_') }}",
   "initial_version": "0.1.0",
   "token": "Can be changed later in config.json",
-  "prefix": ";"
+  "prefix": ";",
+  "add_gino_database": "y"
 }
