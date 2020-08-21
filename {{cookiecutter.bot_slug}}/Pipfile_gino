@@ -9,4 +9,4 @@ verify_ssl = true
 "discord.py" = "*"
 alembic = "*"
 gino = "*"
-psycopg = "*"
+psycopg2 = "*"
