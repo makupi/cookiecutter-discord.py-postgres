@@ -53,7 +53,7 @@ class Utility(commands.Cog):
     async def info(self, ctx):
         """*Shows stats and infos about the bot*
         **Example**: `{prefix}info`"""
-        embed = discord.Embed(title="Daisy")
+        embed = discord.Embed(title="{{cookiecutter.bot_name}}")
         # embed.url = f"https://top.gg/bot/{self.bot.user.id}"
         embed.set_thumbnail(url=self.bot.user.avatar_url)
         embed.add_field(
@@ -75,7 +75,7 @@ class Utility(commands.Cog):
         embed.add_field(
             name="Software Versions",
             value=f"```py\n"
-            f"Daisy: {self.bot.version}\n"
+            f"{{cookiecutter.bot_name}}: {self.bot.version}\n"
             f"discord.py: {discord.__version__}\n"
             f"Python: {PY_VERSION}```",
             inline=False,
