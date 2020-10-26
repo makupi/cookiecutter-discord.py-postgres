@@ -21,7 +21,11 @@ cookiecutter https://github.com/makupi/cookiecutter-discord.py
 - `docker` and `docker-compose` for easier deployment (and development)
 
 # Setup 
-If you are utilizing the postgresql database you have to configure your URI in the `config.json` file.    
+You can either set up postgresql yourself and put the URI in `config.json` or run the database with `docker-compose`    
+To start only the database with docker-compose:
+```
+docker-compose up -d db
+```
 Then you have to generate an initial revision with alembic:
 ```
 pipenv install
