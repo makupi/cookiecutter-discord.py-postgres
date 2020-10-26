@@ -1,7 +1,7 @@
 import json
 import os
 
-default_config = {"token": "", "prefix": "{{cookiecutter.prefix}}"}
+default_config = {"token": "", "prefix": "{{cookiecutter.prefix}}", "database": "postgresql://localhost/bot"}
 
 
 class Config:
@@ -15,8 +15,9 @@ class Config:
             self.config = json.load(file)
         self.prefix = self.config.get("prefix", default_config.get("prefix"))
         self.token = self.config.get("token", default_config.get("token"))
+        self.database = self.config.get("database", default_config.get("database"))
 
     def store(self):
-        data = {"prefix": self.prefix, "token": self.token}
+        data = {"prefix": self.prefix, "token": self.token, "database": self.database}
         with open(self.filename, "w") as file:
             json.dump(data, file)

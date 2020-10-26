@@ -7,3 +7,6 @@ verify_ssl = true
 
 [packages]
 "discord.py" = "*"
+alembic = "*"
+gino = "*"
+psycopg2 = "*"
