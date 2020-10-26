@@ -8,7 +8,7 @@ pip install cookiecutter pipenv
 
 # Using the template
 ```
-cookiecutter https://github.com/makupi/cookiecutter-discord.py
+cookiecutter https://github.com/makupi/cookiecutter-discord.py-postgres
 ```
 
 # Features
