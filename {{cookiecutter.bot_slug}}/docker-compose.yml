@@ -1,0 +1,34 @@
+version: '3'
+volumes:
+  postgres_volume:
+services:
+  db:
+    image: postgres
+    env_file:
+      .env
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=$DB_PASSWORD
+  migration:
+    build: bot
+    command: pipenv run alembic upgrade head
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    environment:
+      - DB_DSN=postgresql://$DB_USER:$DB_PASSWORD@db:$DB_PORT/$DB_DATABASE
+  bot:
+    build: bot
+    command: pipenv run python run.py
+    volumes:
+      - .:/code
+    depends_on:
+      - migration
+    ports:
+      - "80:80"
+    environment:
+      - DB_DSN=postgresql://$DB_USER:$DB_PASSWORD@db:$DB_PORT/$DB_DATABASE

@@ -1,5 +1,5 @@
-# Simple discord.py bot template
-A simple cookiecutter template for a discord.py bot. Comes with some basic utility commands prepared.
+# Simple discord.py-postgres bot template
+A simple cookiecutter template for a discord.py-postgres bot. Comes with some basic utility commands prepared.
 
 # Requirements
 ```
@@ -18,6 +18,7 @@ cookiecutter https://github.com/makupi/cookiecutter-discord.py
 - basic utility cog with `ping`, `info` etc.
 - `gino` as a postgresql ORM
 - `alembic` for database migrations
+- `docker` and `docker-compose` for easier deployment (and development)
 
 # Setup 
 If you are utilizing the postgresql database you have to configure your URI in the `config.json` file.    
