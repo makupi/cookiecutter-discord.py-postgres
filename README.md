@@ -42,4 +42,4 @@ python run.py
 ```
 
 # Credits
-Parts of my template are inspired by [`discord-bot-cli`](https://github.com/stroupbslayen/discord-bot-cli) from StroupBSlayen.
+Parts of my template are inspired by [`discord-bot-cli`](https://github.com/stroupbslayen/discord-bot-cli) made by [StroupBSlayen](https://github.com/stroupbslayen).
