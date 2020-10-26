@@ -1,5 +1,5 @@
 {
   "token": "{{cookiecutter.token}}",
   "prefix": "{{cookiecutter.prefix}}",
-  "database": "postgresql://localhost:5432/bot"
+  "database": "postgresql://localhost:5432/postgres"
 }
